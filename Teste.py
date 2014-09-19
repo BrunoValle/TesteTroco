@@ -11,75 +11,75 @@ from tkinter import *
 
 janela = Tk()
 ment = IntVar()
-
+# acho que o problema esta nessa funcao ou no botao
 def abc():
     x = ment.get() 
     if checkbutton1 == 1:
         notascem = x // 100
-        x = x % 100
         y = '%.2f notas de cem reais' % (notascem)
         if notascem > 0:
             label = Label(janela,text= y).grid(row= 3,column= 1)
+    x = x % 100
     if checkbutton2 == 1:
         notas50 = x // 50
-        x = x % 50
         y = '%.2f notas de cinquenta reais' % (notas50)
         if notas50 > 0:
             label = Label(janela,text = y).grid(row = 4, column = 1)
+    x = x % 50
     if checkbutton3 == 1:
         notas20 = x // 20
-        x = x % 20
         y = ('%.2f notas de vinte reais') % (notas20)
         if notas20 > 0:
             label = Label(janela,text = y).grid(row = 5, column = 1)
+    x = x % 20
     if checkbutton4 == 1:
         notas10 = x // 10
-        x = x % 10
         y = ('%.2f notas de dez reais') % (notas10)
         if notas10 > 0:
             label = Label(janela,text = y).grid(row = 6, column = 1)
+    x = x % 10
     if checkbutton5 == 1:
         notas5 = x // 5
-        x = x % 5
         y = ('%.2f notas de cinco reais') % (notas5)
         if notas5 > 0:
             label = Label(janela,text = y).grid(row = 7, column = 1)
+    x = x % 5
     if checkbutton6 == 1:
         notas2 = x // 2
-        x = x % 2
         y = ('%.2f notas de dois reais') % (notas2)
         if notas2 > 0:
             label = Label(janela,text = y).grid(row = 8, column = 1)
+    x = x % 2
     if checkbutton7 == 1:
         moeda1 = x // 1
-        x = x % 1
         y = ('%.2f moeadas de um reais') % (moeda1)
         if moeda1 > 0:
             label = Label(janela,text = y).grid(row = 9, column = 1)
+    x = x % 1
     if checkbutton8 == 1:
         moeda50 = x // 0.5
-        x = x % 0.5
         y = ('%.2f moeadas de 50 centavos') % (moeda50)
         if moeda50 > 0:
             label = Label(janela,text = y).grid(row = 10, column = 1)
+    x = x % 0.5
     if checkbutton9 == 1:
         moeda25 = x // 0.25
-        x = x % 0.25
         y = ('%.2f moeadas de 25 centavos') % (moeda25)
         if moeda25 > 0:
             label = Label(janela,text = y).grid(row = 11, column = 1)
+    x = x % 0.25
     if checkbutton10 == 1:
         moeda10 = x // 0.10
-        x = x % 0.10
         y = ('%.2f moeadas de 10 centavos') % (moeda10)
         if moeda10 > 0:
             label = Label(janela,text = y).grid(row = 12, column = 1)
+    x = x % 0.10
     if checkbutton11 == 1:
         moeda5 = x // 0.05
-        x = x % 0.05
         y = ('%.2f moeadas de 5 centavos') % (moeda5)
         if moeda5 > 0:
             label = Label(janela,text = y).grid(row = 13, column = 1)
+    x = x % 0.05
     return
         
 
